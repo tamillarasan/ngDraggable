@@ -224,7 +224,7 @@ angular.module("ngDraggable", [])
                          //       onDropCallback(scope, {$data: obj.data, $event: evt});
                          //   });
                             $timeout(function(){
-                                onDropCallback(scope, {$data: obj.data, $event: obj});
+                                onDropCallback(scope, {$data: obj.data, $event: obj, $dropTargetData: attrs.ngDropTargetData || null});
                             });
 
 
